@@ -1,5 +1,5 @@
 import { getDocumentYOffset } from './position';
-import { TIMING_LINEAR, easingFunction } from './timings';
+import { TIMING_EASE_IN_OUT, easingFunction } from './timings';
 
 /**
  * Wrapper to provide `scrollTo` fallback for older browsers
@@ -63,7 +63,7 @@ const animateScroll = (target, duration, timing) => {
 const softScroll = (target, options) => {
   const padding = (options && options.padding) || 0;
   const duration = (options && options.duration) || 0;
-  const timing = (options && options.timing) || TIMING_LINEAR;
+  const timing = (options && options.timing) || TIMING_EASE_IN_OUT;
   const target_y = getDocumentYOffset(target) - padding;
 
   if (!duration) {
