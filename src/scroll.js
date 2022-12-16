@@ -60,7 +60,7 @@ const animateScroll = (target, duration, timing) => {
  * @param {HTMLElement} target Target element
  * @param {?Options} options   Scroll options
  */
-const softScroll = (target, options) => {
+const simpleScroll = (target, options) => {
   const padding = (options && options.padding) || 0;
   const duration = (options && options.duration) || 0;
   const timing = (options && options.timing) || TIMING_EASE_IN_OUT;
@@ -73,4 +73,4 @@ const softScroll = (target, options) => {
   }
 };
 
-export { softScroll };
+export { simpleScroll };

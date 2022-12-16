@@ -1,4 +1,4 @@
-import { softScroll } from './scroll';
+import { simpleScroll } from './scroll';
 import {
   TIMING_LINEAR,
   TIMING_EASE_IN,
@@ -6,9 +6,9 @@ import {
   TIMING_EASE_IN_OUT
 } from './timing';
 
-softScroll.TIMING_LINEAR = TIMING_LINEAR;
-softScroll.TIMING_EASE_IN = TIMING_EASE_IN;
-softScroll.TIMING_EASE_OUT = TIMING_EASE_OUT;
-softScroll.TIMING_EASE_IN_OUT = TIMING_EASE_IN_OUT;
+simpleScroll.TIMING_LINEAR = TIMING_LINEAR;
+simpleScroll.TIMING_EASE_IN = TIMING_EASE_IN;
+simpleScroll.TIMING_EASE_OUT = TIMING_EASE_OUT;
+simpleScroll.TIMING_EASE_IN_OUT = TIMING_EASE_IN_OUT;
 
-export default softScroll;
+export default simpleScroll;
