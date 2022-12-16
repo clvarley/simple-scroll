@@ -34,7 +34,7 @@ const tryScroll = (options) => {
 const animateScroll = (target, duration, timing) => {
   const start_time = performance.now();
   const start_y = window.scrollY;
-  const scroll_delta = start_y - target;
+  const scroll_delta = target - start_y;
 
   /** @type {FrameRequestCallback} */
   const animate = (time) => {
@@ -44,8 +44,10 @@ const animateScroll = (target, duration, timing) => {
       return;
     }
 
-    const progress = timing(duration / elapsed);
+    const progress = timing(elapsed / duration);
     const change = progress * scroll_delta;
+
+    console.log(progress, change);
 
     window.scroll(0, start_y + change);
     window.requestAnimationFrame(animate);
