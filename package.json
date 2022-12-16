@@ -1,0 +1,11 @@
+{
+  "name": "@clvarley/simple-scroll",
+  "version": "1.0.0",
+  "description": "Simple utility to make scrolling elements into view easier.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "clvarley",
+  "license": "MIT"
+}
