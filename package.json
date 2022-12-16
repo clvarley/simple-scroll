@@ -2,15 +2,7 @@
   "name": "@clvarley/simple-scroll",
   "version": "1.0.0",
   "description": "Simple utility to make scrolling elements into view easier.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "src/index.js",
   "author": "clvarley",
-  "license": "MIT",
-  "devDependencies": {
-    "path": "^0.12.7",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
-  }
+  "license": "MIT"
 }
