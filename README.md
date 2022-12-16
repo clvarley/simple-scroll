@@ -84,9 +84,9 @@ expose more in the future.
 
 | Property | Type | Purpose | Default |
 | :------- | :--- | :------ | :------ |
-| `duration` | `number` | Time (in milliseconds) the scroll animation should take | 0 |
-| `padding` | `number` | Padding (in pixels) to be left above the element | 0 |
-| `timing` | `function` | Function used to control how the animation will be timed | [TIMING_EASE_IN_OUT] |
+| `duration` | [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Time (in milliseconds) the scroll animation should take | 0 |
+| `padding` | [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Padding (in pixels) to be left above the element | 0 |
+| `timing` | [`function`](#timing) | Function used to control how the animation will be timed | [TIMING_EASE_IN_OUT](#ease-in-out) |
 
 ## Timing
 
