@@ -1,5 +1,5 @@
 import { getDocumentYOffset } from './position';
-import { TIMING_EASE_IN_OUT, easingFunction } from './timings';
+import { TIMING_EASE_IN_OUT, easingFunction } from './timing';
 
 /**
  * Wrapper to provide `scrollTo` fallback for older browsers
