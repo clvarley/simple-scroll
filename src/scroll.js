@@ -47,8 +47,6 @@ const animateScroll = (target, duration, timing) => {
     const progress = timing(elapsed / duration);
     const change = progress * scroll_delta;
 
-    console.log(progress, change);
-
     window.scroll(0, start_y + change);
     window.requestAnimationFrame(animate);
   };
