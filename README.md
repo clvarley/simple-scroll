@@ -106,7 +106,7 @@ simpleScroll(someElement, {
 });
 ```
 
-### Ease-in
+### Ease-in
 
 Timing with a slow start that accelerates. Gets faster over time and comes to
 a sharp stop at the target element.
@@ -142,9 +142,9 @@ simpleScroll(someElement, {
 });
 ```
 
-### Custom Timing
+### Custom Timing
 
-Not happy with the defaults provided? You can also supply your own timing!
+Not happy with the defaults provided? You can also specify your own timing!
 
 Passing a function of your own as the `timing` option is also allowed. Your
 custom callback must take one argument, a decimal number representing the
