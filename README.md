@@ -13,7 +13,7 @@ way of customisation.
 Simple scroll is a small utility that offers a no-frills, no-nonesense way of
 easily scrolling elements into view.
 
-## Installation
+## Installation
 
 Firstly, make sure to download the library like so:
 
