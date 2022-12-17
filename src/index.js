@@ -12,3 +12,4 @@ simpleScroll.TIMING_EASE_OUT = TIMING_EASE_OUT;
 simpleScroll.TIMING_EASE_IN_OUT = TIMING_EASE_IN_OUT;
 
 export default simpleScroll;
+export { simpleScroll };
