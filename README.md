@@ -7,8 +7,8 @@ The small utility that aims to make scrolling to elements simple.
 Getting the browser to scroll to a given element can be a pain. While APIs like
 [`Element.scrollIntoView`](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView)
 and [`window.scroll`](https://developer.mozilla.org/en-US/docs/Web/API/Window/scroll)
-can get us there, they can be fiddly to get use and don't offer us much in the
-way of customisation.
+can get us there, they can be fiddly to use and don't offer us much in the way
+of customisation.
 
 Simple scroll is a small utility that offers a no-frills, no-nonesense way of
 easily scrolling elements into view.
@@ -55,13 +55,13 @@ there!
 
 When this code gets run - for example inside an event listener - the window will
 be softly scrolled to the `#some-element-id`. If that's all you need, you can
-stop reading here and get hacking!
+stop reading here and get building!
 
 ## Options
 
 However, it's likely you will want to modify the default behavior of
 `simpleScroll` to better suit your needs. The behaviour of `simpleScroll` can be
-customised by passing an options object through as an (optional) second
+customised by passing an options object through via the (optional) second
 parameter.
 
 ```js
@@ -91,9 +91,10 @@ expose more in the future.
 ## Timing
 
 By default, `simpleScroll` uses a [cubic ease-in-out](https://easings.net/#easeInOutCubic)
-curve for its animation (think similar to the `ease-in-out` value of the CSS
-transition property). This is a good general "all rounder" and looks adequate in
-most places, but we also provide a set of other animation styles.
+curve for its animation (similar to how properties animate when using the
+`ease-in-out` value for CSS transitions). This is a good general "all rounder"
+and looks adequate in most places, but we also provide a set of other animation
+styles should you wish to use them.
 
 ### Linear
 
@@ -160,5 +161,5 @@ function myTimingCallback(elapsed: number): number {
 };
 ```
 
-For inspiration, and for ideas of the sort of thing you might want to do, why
+For inspiration, and for ideas of the sort of thing you might want to try, why
 not take a look at some of the examples on [easings.net](https://easings.net/).
