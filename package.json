@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "Simple utility to make scrolling elements into view easier.",
   "type": "module",
-  "keywords": ["scroll", "window", "browser", "DOM"],
+  "keywords": [
+    "scroll",
+    "window",
+    "browser",
+    "DOM"
+  ],
   "homepage": "https://github.com/clvarley/simple-scroll#readme",
   "main": "src/index.js",
   "author": "clvarley",
