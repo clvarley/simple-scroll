@@ -1,5 +1,5 @@
-import { getDocumentYOffset } from './position';
-import { TIMING_EASE_IN_OUT } from './timing';
+import { getDocumentYOffset } from "./position";
+import { TIMING_EASE_IN_OUT } from "ß./timing";
 
 /**
  * Wrapper to provide `scrollTo` fallback for older browsers
@@ -67,7 +67,7 @@ const simpleScroll = (target, options) => {
   const target_y = getDocumentYOffset(target) - padding;
 
   if (!duration) {
-    tryScroll({ top: target_y, left: 0, behavior: 'smooth' });
+    tryScroll({ top: target_y, left: 0, behavior: "smooth" });
   } else {
     animateScroll(target_y, duration, timing);
   }

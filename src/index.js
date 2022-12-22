@@ -1,10 +1,10 @@
-import { simpleScroll } from './scroll';
+import { simpleScroll } from "./scroll";
 import {
   TIMING_LINEAR,
   TIMING_EASE_IN,
   TIMING_EASE_OUT,
   TIMING_EASE_IN_OUT
-} from './timing';
+} from "./timing";
 
 simpleScroll.TIMING_LINEAR = TIMING_LINEAR;
 simpleScroll.TIMING_EASE_IN = TIMING_EASE_IN;

@@ -9,6 +9,9 @@
     "browser",
     "DOM"
   ],
+  "scripts": {
+    "lint": "eslint ./src"
+  },
   "homepage": "https://github.com/clvarley/simple-scroll#readme",
   "main": "src/index.js",
   "author": "clvarley",
