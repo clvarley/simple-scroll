@@ -1,6 +1,6 @@
 {
   "name": "@clvarley/simple-scroll",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple utility to make scrolling elements into view easier.",
   "type": "module",
   "keywords": [
