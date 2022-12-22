@@ -26,6 +26,14 @@
 		"semi": [
 			"error",
 			"always"
+		],
+		"eqeqeq": [
+			"error",
+			"always"
+		],
+		"curly": [
+			"error",
+			"all"
 		]
 	}
 }
