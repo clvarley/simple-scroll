@@ -1,5 +1,5 @@
 import { getDocumentYOffset } from "./position";
-import { TIMING_EASE_IN_OUT } from "ß./timing";
+import { TIMING_EASE_IN_OUT } from "./timing";
 
 /**
  * Wrapper to provide `scrollTo` fallback for older browsers
