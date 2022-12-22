@@ -1,11 +1,22 @@
 {
   "name": "@clvarley/simple-scroll",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple utility to make scrolling elements into view easier.",
   "type": "module",
-  "keywords": ["scroll", "window", "browser", "DOM"],
+  "keywords": [
+    "scroll",
+    "window",
+    "browser",
+    "DOM"
+  ],
+  "scripts": {
+    "lint": "eslint ./src"
+  },
   "homepage": "https://github.com/clvarley/simple-scroll#readme",
   "main": "src/index.js",
   "author": "clvarley",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.30.0"
+  }
 }
