@@ -12,5 +12,8 @@
   "homepage": "https://github.com/clvarley/simple-scroll#readme",
   "main": "src/index.js",
   "author": "clvarley",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.30.0"
+  }
 }
