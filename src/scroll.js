@@ -2,7 +2,7 @@ import { getDocumentYOffset } from "./position";
 import { TIMING_EASE_IN_OUT } from "./timing";
 
 /**
- * Wrapper to provide `scrollTo` fallback for older browsers
+ * Wrapper to allow use of the `behavior: smooth` option on supporting browsers
  *
  * @internal
  * @param {ScrollToOptions} options Scroll options
@@ -16,11 +16,26 @@ const tryScroll = (options) => {
 };
 
 /**
+ * Wrapper to allow use of the `preventScroll` option on supporting browsers
+ *
+ * @internal
+ * @param {HTMLElement}  element Target element
+ */
+const tryFocus = (element) => {
+  try {
+    element.focus({ preventScroll: true });
+  } catch (e) {
+    element.focus();
+  }
+};
+
+/**
  * Available options used to control softScroll behaviour
  *
  * @typedef {Object} Options
  * @property {?number} padding        Buffer above element (in pixels)
  * @property {?number} duration       Scroll duration (in milliseconds)
+ * @property {?boolean} focus         Move keyboard focus to element
  * @property {?easingFunction} timing Easing function
  */
 
@@ -63,6 +78,7 @@ const animateScroll = (target, duration, timing) => {
 const simpleScroll = (target, options) => {
   const padding = (options && options.padding) || 0;
   const duration = (options && options.duration) || 0;
+  const focus = (options && options.focus);
   const timing = (options && options.timing) || TIMING_EASE_IN_OUT;
   const target_y = getDocumentYOffset(target) - padding;
 
@@ -70,6 +86,10 @@ const simpleScroll = (target, options) => {
     tryScroll({ top: target_y, left: 0, behavior: "smooth" });
   } else {
     animateScroll(target_y, duration, timing);
+  }
+
+  if (focus) {
+    tryFocus(target);
   }
 };
 
