@@ -1,4 +1,5 @@
 import { getDocumentYOffset } from "./position";
+import { reducedMotion } from "./a11y";
 import { TIMING_EASE_IN_OUT } from "./timing";
 
 /**
@@ -82,7 +83,7 @@ const simpleScroll = (target, options) => {
   const timing = (options && options.timing) || TIMING_EASE_IN_OUT;
   const target_y = getDocumentYOffset(target) - padding;
 
-  if (!duration) {
+  if (!duration || reducedMotion()) {
     tryScroll({ top: target_y, left: 0, behavior: "smooth" });
   } else {
     animateScroll(target_y, duration, timing);
