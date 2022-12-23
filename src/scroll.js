@@ -36,7 +36,7 @@ const tryFocus = (element) => {
  * @typedef {Object} Options
  * @property {?number} padding        Buffer above element (in pixels)
  * @property {?number} duration       Scroll duration (in milliseconds)
- * @property {?boolean} focus         Move keyboard focus to element
+ * @property {?boolean} focus         Move focus to element after scroll
  * @property {?easingFunction} timing Easing function
  */
 
