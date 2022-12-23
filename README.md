@@ -84,9 +84,20 @@ expose more in the future.
 
 | Property | Type | Purpose | Default |
 | :------- | :--- | :------ | :------ |
-| `duration` | [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Time (in milliseconds) the scroll animation should take | 0 |
+| `duration` | [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Time (in milliseconds) the scroll animation should take<sup>[*](#caveats)</sup> | 0 |
 | `padding` | [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Padding (in pixels) to be left above the element | 0 |
+| `focus` | [`boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Whether or not to focus the element after scroll | `false` |
 | `timing` | [`function`](#timing) | Function used to control how the animation will be timed | [TIMING_EASE_IN_OUT](#ease-in-out) |
+
+## Caveats
+
+As standard `simpleScroll` respects the [`prefers-reduced-motion`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)
+setting. On systems where this flag has been enabled the `duration` and
+`timing` options are silently ignored, with control instead being handled by the
+default browser scrolling behaviour.
+
+If you find your scroll animations aren't respecting the `duration` option this
+may be why.
 
 ## Timing
 
